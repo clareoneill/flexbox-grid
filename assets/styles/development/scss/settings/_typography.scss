@@ -1,0 +1,19 @@
+/*
+** Typography
+** variables and mixins related to typography
+*/
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #444;
+}
+
+p {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+p + p {
+  margin-top: 0;
+}

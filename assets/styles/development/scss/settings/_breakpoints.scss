@@ -1,0 +1,17 @@
+/*
+** Breakpoints
+** variables and mixins related to media query breakpoints
+*/
+
+$bp-madison: 320px;
+$bp-cleveland: 500px;
+$bp-minneapolis: 600px;
+$bp-chicago: 800px;
+$bp-newyork: 1000px;
+$bp-tokyo: 1200px;
+
+@mixin media($breakpoint) {
+   @media only screen and (min-width: $breakpoint) {
+      @content;
+   }
+}

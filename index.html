@@ -3,13 +3,222 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>flexbox grid</title>
+  <title>Flexbox Grid</title>
+
+  <!-- styles -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="assets/styles/production/styles.min.css">
 </head>
 <body>
 
   <header>
-    <h1>flexbox grid</h1>
+    <div class="container">
+      <h1>Flexbox Grid</h1>
+    </div>
   </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <h3>Default grid layout</h3>
+
+        <div class="flex-row">
+          <div class="flex-item-1"><div>.flex-item-1</div></div>
+          <div class="flex-item-11"><div>.flex-item-11</div></div>
+        </div>
+
+        <div class="flex-row">
+          <div class="flex-item-2"><div>.flex-item-2</div></div>
+          <div class="flex-item-10"><div>.flex-item-10</div></div>
+        </div>
+
+        <div class="flex-row">
+          <div class="flex-item-3"><div>.flex-item-3</div></div>
+          <div class="flex-item-9"><div>.flex-item-9</div></div>
+        </div>
+
+        <div class="flex-row">
+          <div class="flex-item-4"><div>.flex-item-4</div></div>
+          <div class="flex-item-8"><div>.flex-item-8</div></div>
+        </div>
+
+        <div class="flex-row">
+          <div class="flex-item-5"><div>.flex-item-5</div></div>
+          <div class="flex-item-7"><div>.flex-item-7</div></div>
+        </div>
+
+        <div class="flex-row">
+          <div class="flex-item-6"><div>.flex-item-6</div></div>
+          <div class="flex-item-6"><div>.flex-item-6</div></div>
+        </div>
+
+        <div class="flex-row">
+          <div class="flex-item-7"><div>.flex-item-7</div></div>
+          <div class="flex-item-5"><div>.flex-item-5</div></div>
+        </div>
+
+        <div class="flex-row">
+          <div class="flex-item-8"><div>.flex-item-8</div></div>
+          <div class="flex-item-4"><div>.flex-item-4</div></div>
+        </div>
+
+        <div class="flex-row">
+          <div class="flex-item-9"><div>.flex-item-9</div></div>
+          <div class="flex-item-3"><div>.flex-item-3</div></div>
+        </div>
+
+        <div class="flex-row">
+          <div class="flex-item-10"><div>.flex-item-10</div></div>
+          <div class="flex-item-2"><div>.flex-item-2</div></div>
+        </div>
+
+        <div class="flex-row">
+          <div class="flex-item-11"><div>.flex-item-11</div></div>
+          <div class="flex-item-1"><div>.flex-item-1</div></div>
+        </div>
+
+        <div class="flex-row">
+          <div class="flex-item-2"><div>.flex-item-2</div></div>
+          <div class="flex-item-1"><div>.flex-item-1</div></div>
+          <div class="flex-item-3"><div>.flex-item-3</div></div>
+          <div class="flex-item-6"><div>.flex-item-6</div></div>
+        </div>
+
+      </div>
+    </section><!-- /Defaults grid layout -->
+
+    <section>
+      <div class="container">
+        <h2>Grid layout modifications</h2>
+
+        <section>
+          <h3>.flex-row.flex-grow</h3>
+          <p>append a .flex-grow class to the .flex-row element to make any .flex-item children fill the horizontal space</p>
+          <div class="flex-row flex-grow">
+            <div class="flex-item-2"><div>.flex-item-2</div></div>
+            <div class="flex-item-1"><div>.flex-item-1</div></div>
+            <div class="flex-item-3"><div>.flex-item-3</div></div>
+          </div>
+        </section><!-- /.flex-row.flex-grow -->
+
+        <section>
+          <h3>.flex-item.flex-grow</h3>
+          <p>append a .flex-grow class to a .flex-item element to make it fill the remaining horizontal space, regardless of its assigned column class</p>
+          <div class="flex-row">
+            <div class="flex-item-2"><div>.flex-item-2</div></div>
+            <div class="flex-item-1 flex-grow"><div>.flex-item-1.flex-grow</div></div>
+            <div class="flex-item-3"><div>.flex-item-3</div></div>
+          </div>
+        </section><!-- /.flex-row.flex-grow -->
+
+        <section>
+          <h3>.flex-row vertical alignment</h3>
+          <p>assign a vertical aligment class to the .flex-row element to target that element&rsquo;s children .flex-item elements alignments</p>
+          <h4>.flex-row.align-center</h4>
+          <div class="flex-row align-center" style="height: 100px; border: 1px solid #444; background-color: #eee;">
+            <div class="flex-item-2"><div>.flex-item-2</div></div>
+            <div class="flex-item-2"><div>.flex-item-2</div></div>
+            <div class="flex-item-2"><div>.flex-item-2</div></div>
+            <div class="flex-item-2"><div>.flex-item-2</div></div>
+            <div class="flex-item-2"><div>.flex-item-2</div></div>
+            <div class="flex-item-2"><div>.flex-item-2</div></div>
+          </div>
+
+          <h4>.flex-row.align-top</h4>
+          <div class="flex-row align-top" style="height: 100px; border: 1px solid #444; background-color: #eee;">
+            <div class="flex-item-2"><div>.flex-item-2</div></div>
+            <div class="flex-item-2"><div>.flex-item-2</div></div>
+            <div class="flex-item-2"><div>.flex-item-2</div></div>
+            <div class="flex-item-2"><div>.flex-item-2</div></div>
+            <div class="flex-item-2"><div>.flex-item-2</div></div>
+            <div class="flex-item-2"><div>.flex-item-2</div></div>
+          </div>
+
+          <h4>.flex-row.align-bottom</h4>
+          <div class="flex-row align-bottom" style="height: 100px; border: 1px solid #444; background-color: #eee;">
+            <div class="flex-item-2"><div>.flex-item-2</div></div>
+            <div class="flex-item-2"><div>.flex-item-2</div></div>
+            <div class="flex-item-2"><div>.flex-item-2</div></div>
+            <div class="flex-item-2"><div>.flex-item-2</div></div>
+            <div class="flex-item-2"><div>.flex-item-2</div></div>
+            <div class="flex-item-2"><div>.flex-item-2</div></div>
+          </div>
+
+          <h4>.flex-row.align-baseline</h4>
+          <div class="flex-row align-baseline" style="height: 100px; border: 1px solid #444; background-color: #eee;">
+            <div class="flex-item-2"><div>.flex-item-2</div></div>
+            <div class="flex-item-2"><div>.flex-item-2</div></div>
+            <div class="flex-item-2"><div>.flex-item-2</div></div>
+            <div class="flex-item-2"><div>.flex-item-2</div></div>
+            <div class="flex-item-2"><div>.flex-item-2</div></div>
+            <div class="flex-item-2"><div>.flex-item-2</div></div>
+          </div>
+
+          <h4>.flex-row.align-stretch</h4>
+          <div class="flex-row align-stretch" style="height: 100px; border: 1px solid #444; background-color: #eee;">
+            <div class="flex-item-2"><div>.flex-item-2</div></div>
+            <div class="flex-item-2"><div>.flex-item-2</div></div>
+            <div class="flex-item-2"><div>.flex-item-2</div></div>
+            <div class="flex-item-2"><div>.flex-item-2</div></div>
+            <div class="flex-item-2"><div>.flex-item-2</div></div>
+            <div class="flex-item-2"><div>.flex-item-2</div></div>
+          </div>
+        </section><!-- /.flex-item vertical alignment -->
+
+        <section>
+          <h3>.flex-item vertical alignment</h3>
+          <p>assign a vertical aligment class to each .flex-item element to target that element&rsquo;s alignment</p>
+          <div class="flex-row" style="height: 100px; border: 1px solid #444; background-color: #eee;">
+            <div class="flex-item-2"><div>default</div></div>
+            <div class="flex-item-2 align-center"><div>.align-center</div></div>
+            <div class="flex-item-2 align-top"><div>.align-top</div></div>
+            <div class="flex-item-2 align-bottom"><div>.align-bottom</div></div>
+            <div class="flex-item-2 align-baseline"><div>.align-baseline</div></div>
+            <div class="flex-item-2 align-stretch"><div>.align-stretch</div></div>
+          </div>
+        </section><!-- /.flex-item vertical alignment -->
+      </div>
+    </section><!-- /Grid layout modifications -->
+
+    <section>
+      <div class="container">
+        <h2>Shortcut grid layouts</h2>
+        
+        <section>
+          <h3>.flex-row-two</h3>
+          <div class="flex-row-two">
+            <div class="flex-item"><div>.flex-item</div></div>
+            <div class="flex-item"><div>.flex-item</div></div>
+            <div class="flex-item"><div>.flex-item</div></div>
+          </div>
+        </section><!-- /.flex-row-two -->
+
+        <section>
+          <h3>.flex-row-three</h3>
+          <div class="flex-row-three">
+            <div class="flex-item"><div>.flex-item</div></div>
+            <div class="flex-item"><div>.flex-item</div></div>
+            <div class="flex-item"><div>.flex-item</div></div>
+            <div class="flex-item"><div>.flex-item</div></div>
+          </div>
+        </section><!-- /.flex-row-three -->
+
+        <section>
+          <h3>.flex-row-four</h3>
+          <div class="flex-row-four">
+            <div class="flex-item"><div>.flex-item</div></div>
+            <div class="flex-item"><div>.flex-item</div></div>
+            <div class="flex-item"><div>.flex-item</div></div>
+            <div class="flex-item"><div>.flex-item</div></div>
+            <div class="flex-item"><div>.flex-item</div></div>
+            <div class="flex-item"><div>.flex-item</div></div>
+            <div class="flex-item"><div>.flex-item</div></div>
+          </div>
+        </section><!-- /.flex-row-four -->
+        
+      </div>
+    </section><!-- /Shortcut grid layouts -->
+  </main>
   
 </body>
 </html>

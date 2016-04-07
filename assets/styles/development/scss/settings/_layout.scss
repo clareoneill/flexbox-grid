@@ -1,0 +1,23 @@
+/*
+** Layout
+** variables and mixins related to the global layout
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+* + * {
+  margin-top: 30px;
+}
+
+html,body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: $bp-tokyo;
+  margin: 0 auto;
+  padding: 0 15px;
+}
