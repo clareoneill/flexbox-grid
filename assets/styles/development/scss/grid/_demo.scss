@@ -1,0 +1,44 @@
+/*
+** Demo
+** variables and mixins related to the styling the flexbox grid demo page
+*/
+
+/*
+** .flex-row
+** layout styling
+** for demo purposes
+*/
+.flex-row {
+  &[class*="justify-"],
+  &[class*="align-items-"],
+  &[class*="align-content-"] {
+    @include media($bp-cleveland) {
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: calc(100% - 30px);
+        height: calc(100% - 30px);
+        left: 15px;
+        background: $color-light-purple;
+        top: 0;
+        z-index: -2;
+      }
+    }
+  }
+
+  // .flex-row align-items modifications
+  &[class*="align-items-"] {
+    @include media($bp-cleveland) {
+      height: 100px;
+    } 
+  }
+
+  // .flex-row align-content modifications
+  &[class*="align-content-"] {
+    @include media($bp-cleveland) {
+      height: 200px;
+    } 
+  }
+}
