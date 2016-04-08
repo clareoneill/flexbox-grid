@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flexbox Grid</title>
+
+  <!-- styles -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,800' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="assets/styles/production/styles.min.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1 class="alpha">Flexbox Grid</h1>
+      <p>a sexy, flexy grid system by <a href="http://clareoneill.me" class="inverted">clare o&rsquo;neill</a></p>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <div class="section-header">
+          <h2 class="beta">Default grid layout</h2>
+        </div>
+
+        <div class="flex-row">
+          <div class="flex-item-1">.flex-item-1</div>
+          <div class="flex-item-11">.flex-item-11</div>
+        </div>
+
+        <div class="flex-row">
+          <div class="flex-item-2">.flex-item-2</div>
+          <div class="flex-item-10">.flex-item-10</div>
+        </div>
+
+        <div class="flex-row">
+          <div class="flex-item-3">.flex-item-3</div>
+          <div class="flex-item-9">.flex-item-9</div>
+        </div>
+
+        <div class="flex-row">
+          <div class="flex-item-4">.flex-item-4</div>
+          <div class="flex-item-8">.flex-item-8</div>
+        </div>
+
+        <div class="flex-row">
+          <div class="flex-item-5">.flex-item-5</div>
+          <div class="flex-item-7">.flex-item-7</div>
+        </div>
+
+        <div class="flex-row">
+          <div class="flex-item-6">.flex-item-6</div>
+          <div class="flex-item-6">.flex-item-6</div>
+        </div>
+
+        <div class="flex-row">
+          <div class="flex-item-7">.flex-item-7</div>
+          <div class="flex-item-5">.flex-item-5</div>
+        </div>
+
+        <div class="flex-row">
+          <div class="flex-item-8">.flex-item-8</div>
+          <div class="flex-item-4">.flex-item-4</div>
+        </div>
+
+        <div class="flex-row">
+          <div class="flex-item-9">.flex-item-9</div>
+          <div class="flex-item-3">.flex-item-3</div>
+        </div>
+
+        <div class="flex-row">
+          <div class="flex-item-10">.flex-item-10</div>
+          <div class="flex-item-2">.flex-item-2</div>
+        </div>
+
+        <div class="flex-row">
+          <div class="flex-item-1">.flex-item-1</div>
+          <div class="flex-item-11">.flex-item-11</div>
+        </div>
+
+        <div class="flex-row">
+          <div class="flex-item-2">.flex-item-2</div>
+          <div class="flex-item-1">.flex-item-1</div>
+          <div class="flex-item-3">.flex-item-3</div>
+          <div class="flex-item-6">.flex-item-6</div>
+        </div>
+
+        <div class="flex-row">
+          <div class="flex-item-7">.flex-item-7</div>
+          <div class="flex-item-2">.flex-item-2</div>
+          <div class="flex-item-3">.flex-item-3</div>
+        </div>
+
+      </div>
+    </section><!-- /Defaults grid layout -->
+    
+    <hr>
+
+    <section>
+      <div class="container">
+        <div class="section-header">
+          <h2 class="beta">Mini grid layout</h2>
+          <p>add the .mini class to a .flex-row element to apply the default grid styling to the .flex-item elements when the viewport is smaller than 500px (recommend using .flex-item-4 at the smallest)</p>
+        </div>
+
+        <div class="flex-row mini">
+          <div class="flex-item-4">.flex-item-4</div>
+          <div class="flex-item-8">.flex-item-8</div>
+        </div>
+
+        <div class="flex-row mini">
+          <div class="flex-item-5">.flex-item-5</div>
+          <div class="flex-item-7">.flex-item-7</div>
+        </div>
+
+        <div class="flex-row mini">
+          <div class="flex-item-6">.flex-item-6</div>
+          <div class="flex-item-6">.flex-item-6</div>
+        </div>
+
+        <div class="flex-row mini">
+          <div class="flex-item-7">.flex-item-7</div>
+          <div class="flex-item-5">.flex-item-5</div>
+        </div>
+
+        <div class="flex-row mini">
+          <div class="flex-item-8">.flex-item-8</div>
+          <div class="flex-item-4">.flex-item-4</div>
+        </div>
+
+      </div>
+    </section><!-- /Mini grid layout -->
+
+
+    <hr>
+
+
+    <section>
+      <div class="container">
+        <div class="section-header">
+          <h2 class="beta">.flex-row layout modifying classes</h2>
+        </div>
+
+        <section>
+          <div class="section-header">
+            <h3 class="gamma">.flex-row.flex-grow</h3>
+            <p>add the .flex-grow class to a .flex-row element to make all of its .flex-item children fill the horizontal space, regardless of its assigned column width</p>
+          </div>
+          <div class="flex-row flex-grow">
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-1"><div>.flex-item-1</div></div>
+            <div class="flex-item-3"><div>.flex-item-3</div></div>
+          </div>
+        </section><!-- /.flex-row.flex-grow -->
+
+        <section>
+          <div class="section-header">
+            <h3 class="gamma">.flex-item flex-wrap</h3>
+          </div>
+          
+          <div class="section-header">
+            <h4 class="delta">.flex-row.wrap (default)</h4>
+          </div>
+          <div class="flex-row wrap">
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+          </div>
+          
+          <div class="section-header">
+            <h4 class="delta">.flex-row.no-wrap</h4>
+            <p>add the .no-wrap class to a .flex-row element to make all of its .flex-item children fit onto one line</p>
+          </div>
+          <div class="flex-row no-wrap">
+            <div class="flex-item">.flex-item</div>
+            <div class="flex-item">.flex-item</div>
+            <div class="flex-item">.flex-item</div>
+            <div class="flex-item">.flex-item</div>
+            <div class="flex-item">.flex-item</div>
+            <div class="flex-item">.flex-item</div>
+            <div class="flex-item">.flex-item</div>
+            <div class="flex-item">.flex-item</div>
+            <div class="flex-item">.flex-item</div>
+          </div>
+          
+          <div class="section-header">
+            <h4 class="delta">.flex-row.wrap-reverse</h4>
+            <p>add the .wrap-reverse class to a .flex-row element to make its .flex-item children wrap right to left (if default is LTR, or left to right if default is RTL)</p>
+          </div>
+          <div class="flex-row wrap-reverse">
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+          </div>
+        </section><!-- /.flex-row.flex-grow -->
+
+        <section>
+          <div class="section-header">
+            <h3 class="gamma">.flex-row justify-content</h3>
+            <p>control alignment of the .flex-item elements along the main axis</p>
+          </div>
+
+          <h4 class="delta">.flex-row.justify-start (default)</h4>
+          <div class="flex-row justify-start">
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+          </div>
+
+          <h4 class="delta">.flex-row.justify-end</h4>
+          <div class="flex-row justify-end">
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+          </div>
+
+          <h4 class="delta">.flex-row.justify-center</h4>
+          <div class="flex-row justify-center">
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+          </div>
+
+          <h4 class="delta">.flex-row.justify-between</h4>
+          <div class="flex-row justify-between">
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+          </div>
+
+          <h4 class="delta">.flex-row.justify-around</h4>
+          <div class="flex-row justify-around">
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+          </div>
+        </section><!-- /.flex-item justify-content -->
+
+        <section>
+          <div class="section-header">
+            <h3 class="gamma">.flex-row align-items</h3>
+            <p>defines alignment of the .flex-item elements along the cross-axis (perpendicular to the justify-content axis)</p>
+          </div>
+
+          <h4 class="delta">.flex-row.align-items-start</h4>
+          <div class="flex-row align-items-start">
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+          </div>
+
+          <h4 class="delta">.flex-row.align-items-end</h4>
+          <div class="flex-row align-items-end">
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+          </div>
+
+          <h4 class="delta">.flex-row.align-items-center</h4>
+          <div class="flex-row align-items-center">
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+          </div>
+
+          <h4 class="delta">.flex-row.align-items-baseline</h4>
+          <div class="flex-row align-items-baseline">
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+          </div>
+
+          <h4 class="delta">.flex-row.align-items-stretch (default)</h4>
+          <div class="flex-row align-items-stretch">
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+          </div>
+        </section><!-- /.flex-item align-items -->
+
+
+        <section>
+          <div class="section-header">
+            <h3 class="gamma">.flex-row align-content</h3>
+            <p>defines alignment of the lines of .flex-item elements within their .flex-row parent container when there is extra space on the cross-axis (doesn&rsquo;t do anything when there is only a single line of .flex-item elements)</p>
+          </div>
+
+          <h4 class="delta">.flex-row.align-content-start</h4>
+          <div class="flex-row align-content-start">
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+          </div>
+
+          <h4 class="delta">.flex-row.align-content-end</h4>
+          <div class="flex-row align-content-end">
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+          </div>
+
+          <h4 class="delta">.flex-row.align-content-center</h4>
+          <div class="flex-row align-content-center">
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+          </div>
+
+          <h4 class="delta">.flex-row.align-content-baseline</h4>
+          <div class="flex-row align-content-baseline">
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+          </div>
+
+          <h4 class="delta">.flex-row.align-content-stretch (default)</h4>
+          <div class="flex-row align-content-stretch">
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-2">.flex-item-2</div>
+          </div>
+        </section><!-- /.flex-item align-content -->
+      </div>
+    </section><!-- /.flex-row = layout modifications-->
+  
+    <hr>
+
+    <section>
+      <div class="container">
+        <div class="section-header">
+          <h2 class="beta">.flex-item layout modifications</h2>
+        </div>
+
+        <section>
+          <div class="section-header">
+            <h3 class="gamma">.flex-item.flex-grow</h3>
+            <p>add the .flex-grow class to any .flex-item element to make it fill the remaining horizontal space, regardless of its assigned column class</p>
+          </div>
+          <div class="flex-row">
+            <div class="flex-item-2">.flex-item-2</div>
+            <div class="flex-item-1 flex-grow">.flex-item-1.flex-grow</div>
+            <div class="flex-item-3">.flex-item-3</div>
+          </div>
+        </section><!-- /.flex-row.flex-grow -->
+
+        <section>
+          <div class="section-header">
+            <h3 class="gamma">.flex-item align-self</h3>
+            <p>allows the default alignment of an individual .flex-item element to be overridden (overrides parent .flex-row element&rsquo;s align-items property)</p>
+          </div>
+          <div class="flex-row">
+            <div class="flex-item-2">default</div>
+            <div class="flex-item-2 align-start">.align-start</div>
+            <div class="flex-item-2 align-end">.align-end</div>
+            <div class="flex-item-2 align-center">.align-center</div>
+            <div class="flex-item-2 align-baseline">.align-baseline</div>
+            <div class="flex-item-2 align-stretch">.align-stretch</div>
+          </div>
+        </section><!-- /.flex-item align-self -->
+      </div>
+    </section><!-- /.flex-item layout modifications-->
+    
+    <hr>
+
+    <section>
+      <div class="container">
+        <div class="section-header">
+          <h2 class="beta">Shortcut grid layouts</h2>
+        </div>
+        
+        <section>
+          <div class="section-header">
+            <h3 class="gamma">.flex-row-two</h3>
+          </div>
+          <div class="flex-row-two">
+            <div class="flex-item">.flex-item</div>
+            <div class="flex-item">.flex-item</div>
+            <div class="flex-item">.flex-item</div>
+          </div>
+        </section><!-- /.flex-row-two -->
+
+        <section>
+          <div class="section-header">
+            <h3 class="gamma">.flex-row-three</h3>
+          </div>
+          <div class="flex-row-three">
+            <div class="flex-item">.flex-item</div>
+            <div class="flex-item">.flex-item</div>
+            <div class="flex-item">.flex-item</div>
+            <div class="flex-item">.flex-item</div>
+          </div>
+        </section><!-- /.flex-row-three -->
+
+        <section>
+          <div class="section-header">
+            <h3 class="gamma">.flex-row-four</h3>
+          </div>
+          <div class="flex-row-four">
+            <div class="flex-item">.flex-item</div>
+            <div class="flex-item">.flex-item</div>
+            <div class="flex-item">.flex-item</div>
+            <div class="flex-item">.flex-item</div>
+            <div class="flex-item">.flex-item</div>
+            <div class="flex-item">.flex-item</div>
+            <div class="flex-item">.flex-item</div>
+          </div>
+        </section><!-- /.flex-row-four -->
+        
+      </div>
+    </section><!-- /Shortcut grid layouts -->
+  </main>
+
+  <footer>
+    <div class="container">
+      <ul class="list-inline">
+        <li>&copy; 2016 <a class="inverted" href="http://clareoneill.me">clare o&rsquo;neill</a></li>
+        <li><a class="inverted" href="https://github.com/clareoneill/flexbox-grid">view on github</a></li>
+      </ul>
+      <p style="margin-bottom: 0;">couldn&rsquo;t have done it without help from:</p>
+      <ul class="list-inline">
+        <li><a class="inverted" href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">css-tricks</a></li>
+        <li><a class="inverted" href="http://codepen.io/guuslieben/pen/bVeObG">guus lieben</a></li>
+        <li><a class="inverted" href="http://codepen.io/geoffyuen/pen/ogrPbZ">geoff yuen</a></li>
+        <li><a class="inverted" href="http://www.heydonworks.com/article/flexbox-grid-finesse">heydonworks</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

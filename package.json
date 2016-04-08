@@ -1,0 +1,29 @@
+{
+  "name": "flexbox-grid",
+  "version": "1.0.0",
+  "description": "my take on a flexbox grid system",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clareoneill/flexbox-grid.git"
+  },
+  "keywords": [
+    "flexbox",
+    "grid"
+  ],
+  "author": "clare o'neill <cmmo330@gmail.com> (http://clareoneill.me)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clareoneill/flexbox-grid/issues"
+  },
+  "homepage": "https://github.com/clareoneill/flexbox-grid#readme",
+  "devDependencies": {
+    "browser-sync": "^2.11.2",
+    "gulp": "^3.9.1",
+    "gulp-jshint": "^2.0.0",
+    "jshint": "^2.9.1"
+  }
+}

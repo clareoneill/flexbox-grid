@@ -1,0 +1,164 @@
+/*
+** Flex-row
+** variables and mixins related to the .flex-row element
+*/
+
+/*
+** .flex-row
+*/
+.flex-row {
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: 0;
+
+  &.margins-off {
+    .flex-item,
+    [class*="flex-item"] {
+      margin-bottom: 0;
+    }
+  }
+  
+  // .flex-item flexbox properties
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+  // .flex-item flex-grow
+  &.flex-grow {
+    .flex-item,
+    [class*="flex-item-"] {
+      flex-grow: 1;
+    }
+  }
+  
+  // mini grid
+  &.mini {
+    @for $i from 1 through 12 {
+      .flex-item-#{$i} {
+        min-width: none;
+        flex-grow: 0; 
+        flex-shrink: 0;
+        flex-basis: 100% * ($i / 12);
+      }
+    }
+  }
+}
+  
+
+/*
+** .flex-row
+** modifications
+*/
+// .flex-row flex-wrap
+.no-wrap {
+  flex-wrap: wrap;
+}
+.no-wrap {
+  flex-wrap: nowrap;
+}
+.wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+// .flex-row flex-direction
+.flex-direction {
+  
+}
+
+@include media($bp-cleveland) {
+  // .flex-row justify-content
+  .justify-start {
+    justify-content: flex-start;
+  }
+  .justify-end {
+    justify-content: flex-end;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .justify-around {
+    justify-content: space-around;
+  }
+
+  // .flex-row align-items
+  .align-items-start {
+    align-items: flex-start;
+  }
+  .align-items-end {
+    align-items: flex-end;
+  }
+  .align-items-center {
+    align-items: center;
+  }
+  .align-items-baseline {
+    align-items: baseline;
+  }
+  .align-items-stretch {
+    align-items: stretch;
+  }
+
+  // .flex-row align-content
+  .align-content-start {
+    align-content: flex-start;
+  }
+  .align-content-end {
+    align-content: flex-end;
+  }
+  .align-content-center {
+    align-content: center;
+  }
+  .align-content-between {
+    align-content: space-between;
+  }
+  .align-content-around {
+    align-content: space-around;
+  }
+  .align-content-stretch {
+    align-content: stretch;
+  }
+}
+
+
+/*
+** .flex-row
+** shortcut layout grids
+*/
+[class*="flex-row-"] {
+  @extend .flex-row;
+}
+
+.flex-row {
+  &-two {
+    .flex-item {
+      flex-basis: 50%;
+    }
+  }
+  &-three {
+    .flex-item {
+      flex-basis: 33.33333%;
+    }
+  }
+  &-four {
+    .flex-item {
+      flex-basis: 25%;
+    }
+  }
+}
+
+/*
+** .flex-row
+** shortcut layout grids
+** media queries
+*/
+@include media($bp-cleveland) {
+  &-two,
+  &-three,
+  &-four {
+    .flex-item {
+      margin-bottom: 30px;
+    }
+  }
+}

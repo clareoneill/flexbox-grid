@@ -1,0 +1,30 @@
+/* -------------
+SETTINGS
+Global settings. Not in alphabetical order so files compile in order.
+---------------*/
+@import 'settings/breakpoints';
+@import 'settings/color';
+@import 'settings/layout';
+@import 'settings/links';
+@import 'settings/typography';
+
+/* -------------
+MIXINS
+Reusable chunks of code.
+---------------*/
+@import 'mixins/grid';
+
+/* -------------
+GRID
+Grid structure.
+---------------*/
+@import 'grid/flex-row';
+@import 'grid/flex-item';
+@import 'grid/demo';
+
+/* -------------
+COMPONENTS
+Global or resuable pieces that are dependant on settings.
+---------------*/
+@import 'components/header';
+@import 'components/footer';

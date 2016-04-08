@@ -1,0 +1,22 @@
+/*
+** Links
+** mixins related to links
+*/
+
+@mixin link($rest-color, $hover-color, $rest-border-color, $hover-border-color, $border-width) {
+  transition: all 300ms ease;
+  text-decoration: none;
+
+  &:link,
+  &:active,
+  &:visited {
+    color: $rest-color;
+    border-bottom: $border-width solid $rest-border-color;
+  }
+
+  &:hover,
+  &:focus {
+    color: $hover-color;
+    border-bottom: $border-width solid $hover-border-color;
+  }
+}

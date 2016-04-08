@@ -1,0 +1,40 @@
+/*
+** Layout
+** variables and mixins related to the global layout
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+* + * {
+  margin-top: 30px;
+}
+
+html,body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: $bp-tokyo;
+  min-width: $bp-madison;
+  margin: 0 auto;
+  padding: 0 15px;
+  overflow: hidden;
+}
+
+.section-header {
+  max-width: $bp-minneapolis;
+  margin: 0 auto 30px;
+}
+
+hr {
+  width: 100%;
+  min-width: 200px;
+  height: 2px;
+  margin: 30px auto;
+  background: $color-medium-gray;
+  border: none;
+  max-width: $bp-minneapolis;
+}
