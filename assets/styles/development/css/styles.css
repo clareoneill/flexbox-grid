@@ -128,6 +128,83 @@ Reusable chunks of code.
 ** Grid Mixins
 ** mixins related to the grid system
 */
+/*
+** Link Mixins
+** mixins related to links
+*/
+a {
+  text-decoration: none; }
+
+/*
+** Typography
+** variables and mixins related to typography
+*/
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #444;
+  font-size: 16px; }
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 15px; }
+
+.alpha {
+  font-size: 2.6em;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-weight: 800;
+  margin-top: 0;
+  margin-bottom: 0; }
+
+.beta {
+  font-size: 2em; }
+
+.gamma {
+  font-size: 1.6em; }
+
+.delta {
+  font-size: 1em; }
+
+p {
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+p + p {
+  margin-top: 0; }
+
+a {
+  text-decoration: none; }
+  a:link, a:active, a:visited {
+    color: #9999ff;
+    border-bottom: 2px solid #9999ff; }
+  a:hover, a:focus {
+    color: #e6e6ff;
+    border-bottom: 2px solid #e6e6ff; }
+  a.inverted {
+    text-decoration: none; }
+    a.inverted:link, a.inverted:active, a.inverted:visited {
+      color: white;
+      border-bottom: 2px solid white; }
+    a.inverted:hover, a.inverted:focus {
+      color: #e6e6ff;
+      border-bottom: 2px solid #e6e6ff; }
+
+.list-inline {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 15px 0;
+  overflow: visible; }
+  .list-inline li {
+    display: inline-block;
+    margin: 0; }
+    .list-inline li::after {
+      content: '/';
+      padding: 0 10px; }
+    .list-inline li:last-of-type::after {
+      content: none; }
+
 /* -------------
 GRID
 Grid structure.
